@@ -1,23 +1,28 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <img src="https://github.com/nan1b.png" alt="Imagem do user" class="rounded-circle img-fluid" width="50" height="50"/>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-    <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+   <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
     <ul class="navbar-nav mr-auto d-flex align-items-center">
-      <li class="nav-item pl-3">
-        <p class="m-2 font-weight-bold text-white fontSize">Ananda</p>
+      <li class="nav-item active">
+        <img src="{{foto}}" alt="Imagem do user" class="rounded-circle img-fluid" width="50" height="50">
       </li>
+
+      <li class="nav-item pl-3">
+        <p class="m-0 font-weight-bold text-white fontSize">Olá, {{nome}}</p>
+      </li>
+
       <li class="nav-item pl-3">
         <a href="">
-          <p class="text-white fontSize m-0"><i class="fa fa-pencil" aria-hidden="true"></i></p>
+          <p class="text-white fontSize m-0"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></p>
         </a>
       </li>
+
     </ul>
-    <ul class="navbar-nav ml-auto d-flex align-items-center mt-1">
+    <ul class="navbar-nav ml-auto d-flex align-items-center">
       <li class="nav-item pl-3">
-        <p><a href="" class="m-0 text-light font-weight-bold">Sair<i class="fa fa-sign-out fa-2x ml-1" aria-hidden="true"></i></a></p>
+        <p><a href="" class="m-0 text-light font-weight-bold fontSize" (click)="sair()">Sair<i class="fa fa-sign-out ml-1" aria-hidden="true"></i></a></p>
       </li>
     </ul>
   </div>
